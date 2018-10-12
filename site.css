@@ -1,0 +1,200 @@
+html, body {
+  color: #393939;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: #4c91ce;
+  background: url("https://thosakwe.com/content/images/2017/11/Attachment-1.png");
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  padding: 10em;
+  position: relative;
+  text-align: center; }
+  header img {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #fff;
+    width: 8em;
+    height: 8em;
+    position: relative; }
+  header .sticky {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0; }
+    header .sticky ul {
+      list-style-type: none;
+      padding-left: 0; }
+      header .sticky ul li {
+        display: inline;
+        margin-right: 1em; }
+    header .sticky .fa {
+      color: #74aad9;
+      font-size: 1.5em; }
+  header .content {
+    position: relative;
+    z-index: 999; }
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85;
+    background-color: #4c91ce; }
+
+iframe, .blurb img {
+  background-color: #275d8d;
+  box-shadow: 0 0 5px black;
+  height: 5em; }
+
+footer {
+  background-color: #1f1f1f;
+  color: grey;
+  padding: 1em 0;
+  text-align: center; }
+  footer ul {
+    list-style-type: none; }
+  footer li {
+    margin-bottom: 1em; }
+  footer a {
+    text-decoration: none; }
+  footer .title {
+    color: #fff; }
+
+section {
+  background-color: #fff;
+  padding: 2em 10em; }
+  section.off {
+    background-color: #275d8d;
+    color: #f1f1f1; }
+    section.off .blurb {
+      background-color: #4c91ce;
+      color: #fff; }
+      section.off .blurb a, section.off .blurb .title {
+        color: #fff; }
+      section.off .blurb img {
+        box-shadow: 0 0 5px #fff; }
+    section.off .title:not(.small) {
+      color: #fff; }
+  section .title {
+    color: #4c91ce;
+    font-size: 2em; }
+
+.blurb {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 1em; }
+  .blurb iframe, .blurb img {
+    border-radius: 5px; }
+
+.button {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #4c91ce;
+  cursor: pointer;
+  line-height: 1.1em;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  .button:hover, .button:focus, .button:active {
+    background-color: #74aad9 !important;
+    color: #fff; }
+  .button.inverted {
+    background-color: #275d8d;
+    color: #fff; }
+
+.horiz {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0; }
+  .horiz li {
+    flex: 1; }
+
+.project {
+  cursor: pointer;
+  flex: 1;
+  position: relative;
+  text-decoration: none;
+  margin-right: 1em;
+  width: 15em; }
+  .project img {
+    height: 100%;
+    width: 100%; }
+  .project .project-description {
+    color: #fff;
+    position: absolute;
+    left: 1em;
+    top: 1em; }
+  .project .project-overlay {
+    background-color: #4c91ce;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0; }
+  .project:hover .project-description {
+    display: block; }
+  .project:hover .project-overlay {
+    background-color: #4c91ce;
+    display: block; }
+  .project .title {
+    font-size: 1.1em;
+    margin-bottom: 1em; }
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-transform: uppercase; }
+  .title.small {
+    font-size: 1em; }
+
+@media screen and (max-width: 768px) {
+  .blurb img {
+    width: 100%;
+    height: auto; }
+
+  section {
+    padding: 1em; }
+
+  header {
+    padding: 1em;
+    padding-top: 5em; }
+
+  .project {
+    margin-bottom: 1em;
+    position: relative; }
+    .project .project-overlay {
+      z-index: 999; } }
+@media screen and (min-width: 769px) {
+  iframe, .blurb img {
+    width: 300px;
+    height: 240px; }
+
+  .blurb {
+    display: flex;
+    flex-direction: row; }
+    .blurb img, .blurb iframe {
+      margin-right: 1em; }
+    .blurb.reversed {
+      flex-direction: row-reverse; }
+    .blurb .content {
+      flex: 4; }
+
+  .project-description, .project-overlay {
+    display: none;
+    position: absolute; }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .project {
+    height: initial; } }
+
+/*# sourceMappingURL=site.css.map */
